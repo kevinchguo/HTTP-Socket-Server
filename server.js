@@ -51,6 +51,7 @@ const server = net.createServer(socket => {
 
   socket.on("error", err => {
     // handle error in connection
+    throw err;
   });
 });
 
